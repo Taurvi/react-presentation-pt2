@@ -98,6 +98,10 @@ React.render(&lt;NewApp /&gt;, document.body);
 				</section>
 
 				<section>
+
+				</section>
+
+				<section>
 					<h3>Exercise 2: Component Properties</h3>
 					<iframe style="height: 600px; width: 960px" data-src="http://jsbin.com/qicoyo/3/embed?js,output"></iframe>
 				</section>
@@ -105,6 +109,90 @@ React.render(&lt;NewApp /&gt;, document.body);
 				<section>
 					<h3>Exercise 2: Answer</h3>
 					<iframe style="height: 600px; width: 960px" data-src="http://jsbin.com/vimimu/3/embed?js,output"></iframe>
+				</section>
+
+				<section>
+					<h3>React Functions</h3>
+					<table style="font-size: .5em;">
+						<thead>
+							<tr>
+								<th style="text-align: center;">Function</th>
+								<th style="text-align: center;">Summary</th>
+								<th style="text-align: center;">Syntax</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="fragment">
+								<td>
+									setState
+								</td>
+								<td>
+									Informs React about data changes
+								</td>
+								<td>
+									<code>
+										someVar.setState( { </br>
+										&nbsp mykey : 'value'  </br>
+										} );
+									</code>
+								</td>
+							</tr>
+							<tr  class="fragment">
+								<td>
+									render
+								</td>
+								<td>
+									Components MUST end with this and must return something.
+								</td>
+								<td>
+									<code>
+										render: function() { </br>
+											&nbsp return( &hellip; ); </br>
+										}
+									</code>
+								</td>
+							</tr>
+							<tr  class="fragment">
+								<td>
+									getInitialState
+								</td>
+								<td>
+									Invoked once before the component is mounted. Returns initial value of <code>{this.state}</code>.
+								</td>
+								<td>
+									<code>
+										getInitialState: function() { &hellip; }
+									</code>
+								</td>
+							</tr>
+							<tr  class="fragment">
+								<td>
+									componentWillMount
+								</td>
+								<td>
+									Invoked once immediately before the initial render
+								</td>
+								<td>
+									<code>
+										componentWillMount: function() { &hellip; }
+									</code>
+								</td>
+							</tr>
+							<tr  class="fragment">
+								<td>
+									custom
+								</td>
+								<td>
+									React suppports custom functions too!
+								</td>
+								<td>
+									<code>
+										functionName: function(n) { &hellip; }
+									</code>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 
 				<section>
