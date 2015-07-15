@@ -279,7 +279,7 @@ React.render(&lt;NewApp /&gt;, document.body);
 
 				multiplex: {
 					// Example values. To generate your own, see the socket.io server instructions.
-					secret: null, // null so the clients do not have control of the master presentation
+					secret: '14369991463777123269', // null so the clients do not have control of the master presentation
 					id: 'b92809a27b338b2b', // id, obtained from socket.io server
 					url: 'http://freeman01.ischool.uw.edu:1948/' // Location of your socket.io server
 				},
@@ -287,7 +287,7 @@ React.render(&lt;NewApp /&gt;, document.body);
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-					{ src: 'plugin/multiplex/client.js', async: true },
+					{ src: 'plugin/multiplex/master.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 				]
 			});
