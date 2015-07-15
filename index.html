@@ -52,7 +52,7 @@
 					<h2>{ REVIEW }</h2>
 				</section>
 				<section>
-					<h2>What is React.js?</h2>
+					<h3>What is React.js?</h3>
 					<ul>
 						<li class="fragment">Built by Facebook and Instagram</li><br/>
 						<li class="fragment">Javascript Library - Builds User Interfaces</li><br/>
@@ -60,7 +60,7 @@
 					</ul>
 				</section>
 				<section data-background="img/wheel.png">
-					<h2>Why React.js?</h2>
+					<h3>Why React.js?</h3>
 					<ul>
 						<li class="fragment">Alternative to Angular (View Only)</li><br/>
 						<li class="fragment">Can modify pages without refresh</li><br/>
@@ -68,7 +68,7 @@
 					</ul>
 				</section>
 				<section>
-						<h2>How to use React.js?</h2>
+						<h3>How to use React.js?</h3>
 						<pre class="fragment"><code class="jsx" data-trim>
 // Generic Variable
 var toWhom = 'World!';
@@ -111,7 +111,42 @@ React.render(&lt;NewApp /&gt;, document.body);
 					<iframe style="height: 600px; width: 960px" data-src="http://jsbin.com/vimimu/3/embed?js,output"></iframe>
 				</section>
 
-				<section>
+				<section data-background="img/states.png">
+					<h2>Introduction to States</h2>
+				</section>
+
+				<section data-background="img/states.png">
+					<h3>What are the differences?</h3>
+					<table style="font-size: .8em;">
+						<thead>
+							<tr>
+								<th style="text-align: center;"></th>
+								<th style="text-align: center; color: green;">Properties</th>
+								<th style="text-align: center; color: purple;">States</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="fragment">
+								<th>Type</th>
+								<td style="color: green;">Static</td>
+								<td style="color: purple;">Dynamic</td>
+							</tr>
+							<tr class="fragment">
+								<th>Initialized</th>
+								<td style="color: green;">On creation of components.</td>
+								<td style="color: purple;">Inside components.</td>
+							</tr>
+							<tr class="fragment">
+								<th>Syntax Reference</th>
+								<td style="color: green;"><code>{this.state.var}</code></td>
+								<td style="color: purple;"><code>{this.props.var}</code></td>
+							</tr>
+						<tr></tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section data-background="img/states.png">
 					<h3>React Functions</h3>
 					<table style="font-size: .5em;">
 						<thead>
