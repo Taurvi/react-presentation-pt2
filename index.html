@@ -270,12 +270,19 @@ React.render(&lt;NewApp /&gt;, document.body);
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				multiplex: {
+					// Example values. To generate your own, see the socket.io server instructions.
+					secret: null, // null so the clients do not have control of the master presentation
+					id: 'ad76486c38dddf9f', // id, obtained from socket.io server
+					url: 'http://revealjs.jit.su' // Location of your socket.io server
+				},
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -284,7 +291,9 @@ React.render(&lt;NewApp /&gt;, document.body);
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
+					{ src: 'plugin/multiplex/client.js', async: true }
 				]
 			});
 
