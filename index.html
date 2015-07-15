@@ -287,8 +287,8 @@ React.render(&lt;NewApp /&gt;, document.body);
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-					{ src: '../../lib/reveal/plugin/multiplex/client.js', async: true },
-					{ src: '../../lib/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/multiplex/client.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 				]
 			});
 			if( window.hljs ) hljs.initHighlightingOnLoad();
